@@ -1,0 +1,113 @@
+/* src/pages/SettingsPage.module.css */
+.settingsPage {
+  padding: 2.5rem 3rem;
+}
+.settingsPage h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.card {
+  background-color: var(--bg-sidebar);
+  padding: 1.5rem 2rem 2rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.cardTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.input {
+  background-color: #1A1A2E;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: var(--text-primary);
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.input:focus {
+  border-color: var(--primary-button);
+}
+.apiKeyInput {
+  flex-grow: 1;
+}
+.inputLabel {
+  color: var(--text-secondary);
+}
+.button {
+  background-color: var(--primary-button);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+.button:hover {
+  background-color: #5046E5;
+}
+.button svg {
+    font-size: 1.2rem;
+}
+.recommendations {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.recommendations h4 {
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+.recommendations ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style-type: '• ';
+}
+.recommendations li {
+  padding-left: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.placeholder {
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--text-secondary);
+}
+.placeholderSub {
+  font-size: 0.9rem;
+  color: #666;
+}
+.priorityList {
+    margin-top: 1rem;
+}
+.priorityItem {
+    padding: 0.8rem 1rem;
+    background-color: #1A1A2E;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}

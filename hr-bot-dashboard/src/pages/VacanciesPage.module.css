@@ -1,0 +1,189 @@
+/* src/pages/VacanciesPage.module.css */
+.vacanciesPage {
+  padding: 2.5rem 3rem;
+}
+.vacanciesPage h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.createButton {
+  background-color: var(--primary-button);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.createButton:hover {
+  background-color: #5046E5;
+}
+.content {
+  margin-top: 1.5rem;
+}
+.placeholder {
+  text-align: center;
+  margin-top: 5rem;
+  color: var(--text-secondary);
+}
+
+/* Form Styles */
+.form {
+  background-color: var(--bg-sidebar);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #444;
+}
+.form label {
+  display: block;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.form input, .form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #1A1A2E;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: var(--text-primary);
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+.form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.form input:focus, .form textarea:focus {
+  border-color: var(--primary-button);
+}
+.formActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.formActions button {
+  background-color: var(--primary-button);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.formActions button[type="button"] {
+  background-color: #444;
+}
+
+/* Agency Item */
+.agencyItem {
+  background-color: var(--bg-sidebar);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+.agencyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+}
+.agencyName {
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.chevronIcon {
+  color: var(--text-secondary);
+}
+.agencyMeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-secondary);
+}
+.agencyBody {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border-top: 1px solid #2a2a3e;
+}
+.addVacancyButton {
+  background: none;
+  border: 1px dashed #444;
+  color: var(--text-secondary);
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.2s;
+}
+.addVacancyButton:hover {
+  background-color: #2a2a3e;
+  color: var(--text-primary);
+  border-color: var(--primary-button);
+}
+
+/* Vacancy Item */
+.vacancyItem {
+  padding: 1rem;
+  border-bottom: 1px solid #2a2a3e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.vacancyItem:last-of-type {
+  border-bottom: none;
+}
+.vacancyName {
+  margin: 0 0 0.25rem 0;
+  font-weight: 500;
+}
+.vacancyDesc {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* --- ЗМІНЕНО: Item Actions (Edit/Delete buttons) --- */
+.itemActions {
+  display: flex;
+  gap: 0.5rem;
+}
+.itemActions button {
+  background: #2a2a3e;
+  border: 1px solid #444;
+  color: var(--text-secondary);
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  padding: 0;
+}
+.itemActions button:hover {
+  background-color: var(--primary-button);
+  border-color: var(--primary-button);
+  color: #fff;
+}
+.itemActions button:last-child:hover {
+  background-color: var(--status-inactive);
+  border-color: var(--status-inactive);
+  color: #fff;
+}

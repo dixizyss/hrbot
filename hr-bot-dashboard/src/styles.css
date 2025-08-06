@@ -1,0 +1,46 @@
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+  /* Кольорова палітра з вашого дизайну */
+  --bg-main: #1A1A2E; /* Основний фон */
+  --bg-sidebar: #161625; /* Фон бічної панелі */
+  --bg-active-item: #5046E5; /* Активний пункт меню */
+  --primary-button: #635FC7; /* Основна кнопка */
+  --text-primary: #EAEAEA; /* Основний текст */
+  --text-secondary: #A0A0A0; /* Другорядний текст */
+  --status-inactive: #E94560; /* Статус "Не активна" */
+  --status-active: #00B894; /* Статус "Активна" */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Новий клас для контенту */
+.content-container {
+    flex-grow: 1;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.content-container::-webkit-scrollbar {
+    width: 6px;
+}
+.content-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+.content-container::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 10px;
+}

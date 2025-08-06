@@ -1,0 +1,79 @@
+/* src/pages/StatisticsPage.module.css */
+.statisticsPage {
+  padding: 2.5rem 3rem;
+}
+.statisticsPage h1 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.filterGroup {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.filterButton {
+  background-color: var(--bg-sidebar);
+  border: 1px solid #444;
+  color: var(--text-secondary);
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+.filterButton:hover {
+  background-color: #2a2a3e;
+  border-color: var(--primary-button);
+  color: var(--text-primary);
+}
+.filterButton.active {
+  background-color: var(--primary-button);
+  color: #FFF;
+  border-color: var(--primary-button);
+  font-weight: 500;
+}
+.card {
+  background-color: var(--bg-sidebar);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+.cardTitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.chartContainer {
+  height: 250px;
+  position: relative; /* Потрібно для позиціонування заглушки */
+}
+.chartPlaceholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    pointer-events: none; /* Щоб не заважало клікам на графік */
+}
+.details p {
+    margin: 0.8rem 0;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+.details strong {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+.details .path {
+    background-color: #2a2a3e;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}

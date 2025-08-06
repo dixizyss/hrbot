@@ -1,0 +1,142 @@
+/* src/pages/HomePage.module.css */
+.mainContent {
+  padding: 2.5rem 3rem;
+}
+.title {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+.card {
+  background-color: var(--bg-sidebar);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+.cardTitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.cardLabel {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+.statusPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.statusInactive {
+  margin: 0.25rem 0 0 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--status-inactive);
+}
+.statusActive {
+  margin: 0.25rem 0 0 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--status-active);
+}
+.actionButton {
+  background-color: var(--primary-button);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.actionButton:hover {
+  background-color: #5046E5;
+}
+.stopButton {
+    background-color: var(--status-inactive);
+}
+.stopButton:hover {
+    background-color: #c0392b;
+}
+.statsGrid {
+  display: flex;
+  gap: 2rem;
+}
+.statItem {
+  text-align: left;
+}
+.statValue {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.settingsInfo p {
+    margin: 0.5rem 0;
+    color: var(--text-secondary);
+}
+.settingsInfo strong {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Стилі для підказки */
+.buttonWrapper {
+  position: relative;
+}
+
+.disabledButton {
+  background-color: #3a3a50;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.disabledButton:hover {
+  background-color: #3a3a50;
+}
+
+.buttonWrapper[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2a2a3e;
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  z-index: 10;
+  border: 1px solid #444;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.buttonWrapper[data-tooltip]:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #2a2a3e transparent transparent transparent;
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.buttonWrapper[data-tooltip]::after,
+.buttonWrapper[data-tooltip]::before {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

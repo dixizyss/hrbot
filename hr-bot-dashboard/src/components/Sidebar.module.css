@@ -1,0 +1,50 @@
+/* src/components/Sidebar.module.css */
+.sidebar {
+  width: 260px;
+  background-color: var(--bg-sidebar);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.logo h2 {
+  margin: 0 0 2.5rem 0.5rem;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navItem:hover {
+  background-color: #2a2a3e;
+  color: var(--text-primary);
+}
+
+.navItem.active {
+  background-color: var(--bg-active-item);
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.icon {
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  display: inline-flex;
+}
